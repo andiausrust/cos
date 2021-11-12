@@ -1,10 +1,8 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-import { AppModule } from '../../app.module';
-import { CustomDatePipe } from '../../libs/utils/custom-date.pipe';
 import { UtilsModule } from '../../libs/utils/utils.module';
 import { BuyerAuctionItemComponent } from './buyer-auction-item/buyer-auction-item.component';
 
@@ -20,6 +18,6 @@ import { BuyerAuctionListPage } from './buyer-auction-list.page';
     BuyerAuctionListPageRoutingModule,
     UtilsModule
   ],
-  declarations: [BuyerAuctionListPage, BuyerAuctionItemComponent ]
+  declarations: [ BuyerAuctionListPage, BuyerAuctionItemComponent ]
 })
 export class BuyerAuctionListPageModule {}
