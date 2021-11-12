@@ -1,0 +1,7 @@
+{
+  "name": "cos-challenge",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

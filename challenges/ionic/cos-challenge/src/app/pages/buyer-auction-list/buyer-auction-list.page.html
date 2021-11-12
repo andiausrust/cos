@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-button (click)="onExit()">
+        <ion-icon slot="icon-only" name="exit-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Auction List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <cos-buyer-auction-item [buyerAuctionItems]="buyerAuctionItems$ | async"></cos-buyer-auction-item>
+</ion-content>

@@ -1,0 +1,86 @@
+import { AssociatedVehicle } from './associated-vehicle.model';
+
+export interface BuyerAuctionItemModel {
+  label:                                    string;
+  endingTime:                               Date;
+  state:                                    number;
+  minimumRequiredAsk:                       number;
+  currentHighestBidValue:                   number;
+  numBids:                                  number;
+  locationAddress:                          null;
+  locationCity:                             string;
+  locationZip:                              string;
+  startedAt:                                Date;
+  createdAt:                                Date;
+  updatedAt:                                Date;
+  hotBid:                                   boolean;
+  originalMinimumRequiredAsk:               null;
+  allowInstantPurchase:                     boolean;
+  instantPurchasePossibleUntil:             null;
+  advertisementHtmlContent:                 null;
+  instantPurchasePrice:                     number | null;
+  locationCountryCode:                      string;
+  startingBidValue:                         number;
+  uuid:                                     string;
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  _fk_uuid_vehicle:                         string;
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  _fk_uuid_sellerUser:                      string;
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  _fk_uuid_highestBiddingBuyerUser:         null;
+  urlToPickupBuyerDocument:                 null;
+  paymentProcess:                           number;
+  type:                                     number;
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  _fk_uuid_creatingSellerUser:              null;
+  isTest:                                   boolean;
+  displayMinAsk:                            boolean;
+  isLive:                                   boolean;
+  isTransportationDisabledManually:         boolean;
+  startingBidValueNet:                      number;
+  minimumRequiredAskNet:                    number;
+  originalMinimumRequiredAskNet:            null;
+  purchasePriceNet:                         number | null;
+  currentHighestBidValueNet:                number;
+  highestBidValueAtEndingTimeNet:           null;
+  instantPurchasePriceNet:                  null;
+  lastOfferBySellerNet:                     null;
+  previousLastOfferBySellerNet:             null;
+  counterOfferByBuyerNet:                   null;
+  previousCounterOfferByBuyerNet:           null;
+  renegotiationMidpointValueNet:            null;
+  pickupInstructions:                       string;
+  thirdPartyVATDepositTransferReference:    null;
+  thirdPartyVATDepositChargeReference:      null;
+  thirdPartyVolumeChargeReference:          null;
+  thirdPartyVatTransferReference:           null;
+  thirdPartyVATDepositRefundReference:      null;
+  preventSellerFactoring:                   boolean;
+  amIInvolved:                              boolean;
+  biddingAgentValue:                        number;
+  remainingTimeInSeconds:                   number;
+  remainingTimeForInstantPurchaseInSeconds: null;
+  associatedVehicle:                        AssociatedVehicle;
+  amIHighestBidder:                         boolean;
+  sellerContact:                            null;
+  rating:                                   null;
+  isTransportationAllowedForRegion:         boolean;
+  isExternalPaymentAllowed:                 boolean;
+  remainingDaysUntilReauctioning:           null;
+  remainingDaysUntilLatePickup:             null;
+  latePickupFee:                            null;
+  isTransportationBookingPossible:          boolean;
+  isExpressPickupAvailable:                 boolean;
+  pickupPossibleInDays:                     null;
+  sellerAccount:                            null;
+  amIRegularBuyer:                          boolean;
+  isCrossBorderNetSale:                     boolean;
+  distanceToVehicleInKms:                   number;
+  buyerPurchaseFee:                         number;
+  buyerSuccessFee:                          number;
+  isMinAskReached:                          boolean;
+  transportationTask:                       null;
+  sellerType:                               number;
+  enforceTransportation:                    boolean;
+  isTransportationAvailable:                boolean;
+}

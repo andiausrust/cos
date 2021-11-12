@@ -1,0 +1,21 @@
+<ion-card *ngFor="let item of buyerAuctionItems; let i = index;">
+  <ion-card-content>
+
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <ion-img [src]="item.img"></ion-img>
+        </ion-thumbnail>
+        <ion-label>Auction No. {{ i + 1 }}</ion-label>
+      </ion-item>
+      <ion-item>Erstzulassung: {{ item.ez }}</ion-item>
+      <ion-item>Mileage: {{ item.mileage }}</ion-item>
+      <ion-item>Fuel Type: {{ item.fuelType }}</ion-item>
+      <ion-item>Transmittion: {{ item.transmission }}</ion-item>
+      <ion-item>Current highest bid: {{ item.currentHighestBidValue }}</ion-item>
+      <ion-item>Remaining time: {{ item.remainingTime | customDate }}</ion-item>
+      <ion-item>Your are highest bidder: {{ item.amIHighestBidder }}</ion-item>
+    </ion-list>
+
+  </ion-card-content>
+</ion-card>
